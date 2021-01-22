@@ -3,6 +3,7 @@ pipeline {
     tools { nodejs "node" }
     options {
         ansiColor('xterm')
+        skipDefaultCheckout(true)
     }
     stages {
         stage("Fetch Cypress"){
